@@ -31,25 +31,28 @@ class DriverCell: UITableViewCell {
         return label
     }()
     
+    // do set up here
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setUpUI()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
+    // do updates here
     func configure(_ driver: DriverViewModel) {
-        
         driverNameLabel.text = driver.name
         specialSkillLabel.text = "Special skill: \(driver.specialSkill)"
         debutTourLabel.text = "Debut tour: \(driver.debutTour)"
-        
+    }
+    
+    private func setUpUI() {
         contentView.addSubview(driverNameLabel)
         contentView.addSubview(specialSkillLabel)
         contentView.addSubview(debutTourLabel)
     
-        
         // add NSLayoutConstraints for name
         driverNameLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
         driverNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
