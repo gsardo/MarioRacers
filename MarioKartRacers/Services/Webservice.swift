@@ -1,6 +1,6 @@
 //
 //  Webservices.swift
-//  Mario Kart Racers
+//  MarioKartRacers
 //
 //  Created by Giuseppe Sardo on 12/9/2022.
 //
@@ -13,8 +13,7 @@ enum FetchError: Error {
 
 final class Webservice {
     
-    // this fetches data from the API and returns an array of Driver data
-    func getDriverData(url: URL) async throws -> [Driver] {
+    func getData(url: URL) async throws -> Data {
         
         let (data, response) = try await URLSession.shared.data(from: url)
         
@@ -24,7 +23,6 @@ final class Webservice {
                     throw FetchError.invalidServerResponse
             }
         
-        //this decodes the data into an array of Drivers and return it from the function
-        return try JSONDecoder().decode([Driver].self, from: data)
+        return data
     }
 }

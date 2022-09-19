@@ -1,9 +1,10 @@
 //
 //  DriverCell.swift
-//  Mario Kart Racers
+//  MarioKartRacers
 //
 //  Created by Giuseppe Sardo on 12/9/2022.
 //
+
 import UIKit
 
 final class DriverCell: UITableViewCell {
@@ -42,8 +43,7 @@ final class DriverCell: UITableViewCell {
         super.init(coder: coder)
     }
     
-    // do updates here
-    func configure(_ driver: DriverViewModel) {
+    func configure(_ driver: Driver) {
         driverNameLabel.text = driver.name
         specialSkillLabel.text = "Special skill: \(driver.specialSkill)"
         debutTourLabel.text = "Debut tour: \(driver.debutTour)"
@@ -70,5 +70,4 @@ final class DriverCell: UITableViewCell {
         debutTourLabel.trailingAnchor.constraint(equalTo: specialSkillLabel.trailingAnchor).isActive = true
         debutTourLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20).isActive = true
     }
-    
 }

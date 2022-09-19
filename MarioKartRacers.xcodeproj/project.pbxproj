@@ -8,34 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		1A374B2028CEE83200371A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B1F28CEE83200371A9C /* AppDelegate.swift */; };
-		1A374B2228CEE83200371A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B2128CEE83200371A9C /* SceneDelegate.swift */; };
 		1A374B2928CEE83300371A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A374B2828CEE83300371A9C /* Assets.xcassets */; };
 		1A374B2C28CEE83300371A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A374B2A28CEE83300371A9C /* LaunchScreen.storyboard */; };
 		1A374B3528CEE86800371A9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B3428CEE86800371A9C /* Constants.swift */; };
-		1A374B3828CEE8B500371A9C /* Webservices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B3728CEE8B500371A9C /* Webservices.swift */; };
+		1A374B3828CEE8B500371A9C /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B3728CEE8B500371A9C /* Webservice.swift */; };
 		1A374B3B28CEE94800371A9C /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B3A28CEE94800371A9C /* Driver.swift */; };
-		1A374B3E28CEEA8700371A9C /* DriverDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B3D28CEEA8700371A9C /* DriverDataViewModel.swift */; };
-		1A374B4128CEEB8900371A9C /* DriverDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B4028CEEB8900371A9C /* DriverDataViewController.swift */; };
+		1A374B3E28CEEA8700371A9C /* DriverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B3D28CEEA8700371A9C /* DriverViewModel.swift */; };
+		1A374B4128CEEB8900371A9C /* DriversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B4028CEEB8900371A9C /* DriversViewController.swift */; };
 		1A374B4428CF6D1500371A9C /* DriverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B4328CF6D1500371A9C /* DriverCell.swift */; };
+		94BFCFF428D87A8000B700A9 /* Extensions+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BFCFF328D87A8000B700A9 /* Extensions+UITableViewCell.swift */; };
+		94BFCFF728D8824B00B700A9 /* DriversRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BFCFF628D8824B00B700A9 /* DriversRepository.swift */; };
+		94BFCFF928D882E100B700A9 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BFCFF828D882E100B700A9 /* DataMapper.swift */; };
+		94BFD00128D88C8100B700A9 /* MarioKartRacersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BFD00028D88C8100B700A9 /* MarioKartRacersTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94BFD00228D88C8100B700A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A374B1428CEE83200371A9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A374B1B28CEE83200371A9C;
+			remoteInfo = MarioKartRacers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A374B1C28CEE83200371A9C /* MarioKartRacers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MarioKartRacers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A374B1F28CEE83200371A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A374B2128CEE83200371A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A374B2828CEE83300371A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A374B2B28CEE83300371A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A374B2D28CEE83300371A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A374B3428CEE86800371A9C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		1A374B3728CEE8B500371A9C /* Webservices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservices.swift; sourceTree = "<group>"; };
+		1A374B3728CEE8B500371A9C /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		1A374B3A28CEE94800371A9C /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
-		1A374B3D28CEEA8700371A9C /* DriverDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDataViewModel.swift; sourceTree = "<group>"; };
-		1A374B4028CEEB8900371A9C /* DriverDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDataViewController.swift; sourceTree = "<group>"; };
+		1A374B3D28CEEA8700371A9C /* DriverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewModel.swift; sourceTree = "<group>"; };
+		1A374B4028CEEB8900371A9C /* DriversViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversViewController.swift; sourceTree = "<group>"; };
 		1A374B4328CF6D1500371A9C /* DriverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverCell.swift; sourceTree = "<group>"; };
+		94BFCFF328D87A8000B700A9 /* Extensions+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UITableViewCell.swift"; sourceTree = "<group>"; };
+		94BFCFF628D8824B00B700A9 /* DriversRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversRepository.swift; sourceTree = "<group>"; };
+		94BFCFF828D882E100B700A9 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
+		94BFCFFE28D88C8100B700A9 /* MarioKartRacersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarioKartRacersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94BFD00028D88C8100B700A9 /* MarioKartRacersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarioKartRacersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A374B1928CEE83200371A9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94BFCFFB28D88C8100B700A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				1A374B1E28CEE83200371A9C /* MarioKartRacers */,
+				94BFCFFF28D88C8100B700A9 /* MarioKartRacersTests */,
 				1A374B1D28CEE83200371A9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				1A374B1C28CEE83200371A9C /* MarioKartRacers.app */,
+				94BFCFFE28D88C8100B700A9 /* MarioKartRacersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,14 +90,11 @@
 		1A374B1E28CEE83200371A9C /* MarioKartRacers */ = {
 			isa = PBXGroup;
 			children = (
-				1A374B4228CF6D0400371A9C /* Cells */,
-				1A374B3F28CEEB7400371A9C /* Controllers */,
-				1A374B3C28CEEA7600371A9C /* ViewModels */,
-				1A374B3928CEE92C00371A9C /* Models */,
+				94BFCFF528D87D0100B700A9 /* Drivers */,
+				94BFCFF228D87A5C00B700A9 /* Utilities */,
 				1A374B3628CEE8A200371A9C /* Services */,
 				1A374B3328CEE85500371A9C /* Constants */,
 				1A374B1F28CEE83200371A9C /* AppDelegate.swift */,
-				1A374B2128CEE83200371A9C /* SceneDelegate.swift */,
 				1A374B2828CEE83300371A9C /* Assets.xcassets */,
 				1A374B2A28CEE83300371A9C /* LaunchScreen.storyboard */,
 				1A374B2D28CEE83300371A9C /* Info.plist */,
@@ -90,41 +113,38 @@
 		1A374B3628CEE8A200371A9C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1A374B3728CEE8B500371A9C /* Webservices.swift */,
+				1A374B3728CEE8B500371A9C /* Webservice.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		1A374B3928CEE92C00371A9C /* Models */ = {
+		94BFCFF228D87A5C00B700A9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				94BFCFF328D87A8000B700A9 /* Extensions+UITableViewCell.swift */,
+				94BFCFF828D882E100B700A9 /* DataMapper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		94BFCFF528D87D0100B700A9 /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				1A374B3D28CEEA8700371A9C /* DriverViewModel.swift */,
+				94BFCFF628D8824B00B700A9 /* DriversRepository.swift */,
 				1A374B3A28CEE94800371A9C /* Driver.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		1A374B3C28CEEA7600371A9C /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				1A374B3D28CEEA8700371A9C /* DriverDataViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		1A374B3F28CEEB7400371A9C /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				1A374B4028CEEB8900371A9C /* DriverDataViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		1A374B4228CF6D0400371A9C /* Cells */ = {
-			isa = PBXGroup;
-			children = (
+				1A374B4028CEEB8900371A9C /* DriversViewController.swift */,
 				1A374B4328CF6D1500371A9C /* DriverCell.swift */,
 			);
-			path = Cells;
+			path = Drivers;
+			sourceTree = "<group>";
+		};
+		94BFCFFF28D88C8100B700A9 /* MarioKartRacersTests */ = {
+			isa = PBXGroup;
+			children = (
+				94BFD00028D88C8100B700A9 /* MarioKartRacersTests.swift */,
+			);
+			path = MarioKartRacersTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +167,24 @@
 			productReference = 1A374B1C28CEE83200371A9C /* MarioKartRacers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		94BFCFFD28D88C8100B700A9 /* MarioKartRacersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94BFD00428D88C8100B700A9 /* Build configuration list for PBXNativeTarget "MarioKartRacersTests" */;
+			buildPhases = (
+				94BFCFFA28D88C8100B700A9 /* Sources */,
+				94BFCFFB28D88C8100B700A9 /* Frameworks */,
+				94BFCFFC28D88C8100B700A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94BFD00328D88C8100B700A9 /* PBXTargetDependency */,
+			);
+			name = MarioKartRacersTests;
+			productName = MarioKartRacersTests;
+			productReference = 94BFCFFE28D88C8100B700A9 /* MarioKartRacersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,6 +197,10 @@
 				TargetAttributes = {
 					1A374B1B28CEE83200371A9C = {
 						CreatedOnToolsVersion = 13.3;
+					};
+					94BFCFFD28D88C8100B700A9 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 1A374B1B28CEE83200371A9C;
 					};
 				};
 			};
@@ -176,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				1A374B1B28CEE83200371A9C /* MarioKartRacers */,
+				94BFCFFD28D88C8100B700A9 /* MarioKartRacersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +233,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94BFCFFC28D88C8100B700A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -197,18 +247,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A374B3828CEE8B500371A9C /* Webservices.swift in Sources */,
-				1A374B3E28CEEA8700371A9C /* DriverDataViewModel.swift in Sources */,
+				1A374B3828CEE8B500371A9C /* Webservice.swift in Sources */,
+				1A374B3E28CEEA8700371A9C /* DriverViewModel.swift in Sources */,
 				1A374B2028CEE83200371A9C /* AppDelegate.swift in Sources */,
+				94BFCFF428D87A8000B700A9 /* Extensions+UITableViewCell.swift in Sources */,
 				1A374B3B28CEE94800371A9C /* Driver.swift in Sources */,
-				1A374B2228CEE83200371A9C /* SceneDelegate.swift in Sources */,
-				1A374B4128CEEB8900371A9C /* DriverDataViewController.swift in Sources */,
+				1A374B4128CEEB8900371A9C /* DriversViewController.swift in Sources */,
+				94BFCFF928D882E100B700A9 /* DataMapper.swift in Sources */,
 				1A374B3528CEE86800371A9C /* Constants.swift in Sources */,
 				1A374B4428CF6D1500371A9C /* DriverCell.swift in Sources */,
+				94BFCFF728D8824B00B700A9 /* DriversRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94BFCFFA28D88C8100B700A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94BFD00128D88C8100B700A9 /* MarioKartRacersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94BFD00328D88C8100B700A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A374B1B28CEE83200371A9C /* MarioKartRacers */;
+			targetProxy = 94BFD00228D88C8100B700A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1A374B2A28CEE83300371A9C /* LaunchScreen.storyboard */ = {
@@ -355,7 +423,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sardo.giuseppe.Mario-Kart-Racers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sardo.giuseppe.MarioKartRacers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -382,11 +450,45 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sardo.giuseppe.Mario-Kart-Racers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sardo.giuseppe.MarioKartRacers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94BFD00528D88C8100B700A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sardo.giuseppe.MarioKartRacersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarioKartRacers.app/MarioKartRacers";
+			};
+			name = Debug;
+		};
+		94BFD00628D88C8100B700A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sardo.giuseppe.MarioKartRacersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarioKartRacers.app/MarioKartRacers";
 			};
 			name = Release;
 		};
@@ -407,6 +509,15 @@
 			buildConfigurations = (
 				1A374B3128CEE83300371A9C /* Debug */,
 				1A374B3228CEE83300371A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94BFD00428D88C8100B700A9 /* Build configuration list for PBXNativeTarget "MarioKartRacersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94BFD00528D88C8100B700A9 /* Debug */,
+				94BFD00628D88C8100B700A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

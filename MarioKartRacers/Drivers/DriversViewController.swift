@@ -1,40 +1,47 @@
 //
-//  DriverDataViewController.swift
-//  Mario Kart Racers
+//  DriversViewController.swift
+//  MarioKartRacers
 //
 //  Created by Giuseppe Sardo on 12/9/2022.
 //
 
 import UIKit
 
-//this displays all driver data in a tableview
-final class DriverDataViewController: UIViewController {
+protocol DriversView: AnyObject {
+    func refresh(with state: DriversState)
+}
+
+enum DriversState {
+    case loaded
+    case error
+}
+
+final class DriversViewController: UIViewController {
     
+    private let viewModel = DriverViewModel()
     private let tableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(DriverCell.self, forCellReuseIdentifier: "DriverCell")
+        tableView.register(DriverCell.self, forCellReuseIdentifier: DriverCell.reuseIdentifier)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
-    private let viewModel = DriverDataViewModel()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        viewModel.view = self
         Task {
-        await populateDriverData()
+            await populateDriverData()
         }
     }
-    
-    private func populateDriverData() async {
-        await viewModel.populateDriverData(url: Constants.Urls.drivers)
-        DispatchQueue.main.async { [weak self] in
-            self?.tableView.reloadData()
-        }
+}
+
+private extension DriversViewController {
+    func populateDriverData() async {
+        await viewModel.populateDriverData()
     }
     
-    private func configureUI() {
+    func configureUI() {
         title = "Mario Kart - Super Drivers"
         view.backgroundColor = .white
         view.addSubview(tableView)
@@ -51,15 +58,25 @@ final class DriverDataViewController: UIViewController {
     }    
 }
 
-extension DriverDataViewController: UITableViewDataSource {
-    
+extension DriversViewController: DriversView {
+    func refresh(with state: DriversState) {
+        switch state {
+        case .loaded:
+            tableView.reloadData()
+        case .error:
+            // some error state
+            break
+        }
+    }
+}
+
+extension DriversViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.drivers.count
     }
     
-  
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DriverCell", for: indexPath) as? DriverCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: DriverCell.reuseIdentifier, for: indexPath) as? DriverCell else {
             fatalError("DriverCell is not defined!")
         }
 

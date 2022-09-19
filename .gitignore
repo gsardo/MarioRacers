@@ -1,3 +1,13 @@
 MarioKartRacers.xcodeproj/
 
 .DS_Store
+
+## User settings
+xcuserdata/
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
