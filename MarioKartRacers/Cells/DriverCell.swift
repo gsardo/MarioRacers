@@ -10,20 +10,24 @@ final class DriverCell: UITableViewCell {
     
     private let driverNameLabel: UILabel = {
         let label = UILabel()
+        label.font = .preferredFont(forTextStyle: .body)
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let specialSkillLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 11)
+        label.font = .preferredFont(forTextStyle: .caption1)
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let debutTourLabel: UILabel = {
         let label =  UILabel()
-        label.font = UIFont.systemFont(ofSize: 11)
+        label.font = .preferredFont(forTextStyle: .caption1)
+        label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

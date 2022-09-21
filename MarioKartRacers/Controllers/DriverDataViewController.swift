@@ -37,8 +37,7 @@ final class DriverDataViewController: UIViewController {
     }
     
     private func configureUI() {
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.title = "Mario Kart - Super Drivers"
+        title = "Mario Kart - Super Drivers"
         view.backgroundColor = .white
         
         var constraints = [NSLayoutConstraint]()
