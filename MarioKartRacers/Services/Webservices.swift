@@ -11,7 +11,7 @@ enum FetchError: Error {
     case invalidServerResponse
 }
 
-class Webservice {
+final class Webservice {
     
     // this fetches data from the API and returns an array of Driver data
     func getDriverData(url: URL) async throws -> [Driver] {

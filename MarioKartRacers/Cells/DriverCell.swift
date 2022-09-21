@@ -4,12 +4,9 @@
 //
 //  Created by Giuseppe Sardo on 12/9/2022.
 //
-
-import Foundation
 import UIKit
 
-
-class DriverCell: UITableViewCell {
+final class DriverCell: UITableViewCell {
     
     private let driverNameLabel: UILabel = {
         let label = UILabel()
@@ -52,6 +49,22 @@ class DriverCell: UITableViewCell {
         contentView.addSubview(driverNameLabel)
         contentView.addSubview(specialSkillLabel)
         contentView.addSubview(debutTourLabel)
+        
+        // add NSLayoutConstraints for name
+        driverNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
+        driverNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
+        driverNameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true
+
+        // add NSLayoutConstraints for specialSkill
+        specialSkillLabel.topAnchor.constraint(equalTo: driverNameLabel.bottomAnchor).isActive = true
+        specialSkillLabel.leadingAnchor.constraint(equalTo: driverNameLabel.leadingAnchor).isActive = true
+        specialSkillLabel.trailingAnchor.constraint(equalTo: driverNameLabel.trailingAnchor).isActive = true
+
+        // add NSLayoutConstraints for debutTour
+        debutTourLabel.topAnchor.constraint(equalTo: specialSkillLabel.bottomAnchor).isActive = true
+        debutTourLabel.leadingAnchor.constraint(equalTo: specialSkillLabel.leadingAnchor).isActive = true
+        debutTourLabel.trailingAnchor.constraint(equalTo: specialSkillLabel.trailingAnchor).isActive = true
+        debutTourLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20).isActive = true
     }
     
 }

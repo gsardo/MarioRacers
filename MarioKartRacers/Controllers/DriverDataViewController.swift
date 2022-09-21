@@ -5,11 +5,10 @@
 //  Created by Giuseppe Sardo on 12/9/2022.
 //
 
-import Foundation
 import UIKit
 
 //this displays all driver data in a tableview
-class DriverDataViewController: UIViewController {
+final class DriverDataViewController: UIViewController {
     
     private let tableView: UITableView = {
         let tableView = UITableView()
@@ -27,6 +26,7 @@ class DriverDataViewController: UIViewController {
         Task {
         await populateDriverData()
         }
+        tableView.dataSource = self
     }
     
     private func populateDriverData() async {
@@ -39,6 +39,7 @@ class DriverDataViewController: UIViewController {
     private func configureUI() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.title = "Mario Kart - Super Drivers"
+        view.backgroundColor = .white
         
         var constraints = [NSLayoutConstraint]()
         // Add
@@ -68,12 +69,4 @@ extension DriverDataViewController: UITableViewDataSource {
         
         return cell
     }
-}
-
-extension DriverDataViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
-    }
-
 }

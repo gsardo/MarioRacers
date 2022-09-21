@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DriverDataViewModel {
+final class DriverDataViewModel {
     
     private(set) var drivers: [DriverViewModel] = []
     
