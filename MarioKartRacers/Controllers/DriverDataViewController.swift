@@ -21,12 +21,10 @@ final class DriverDataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
         configureUI()
         Task {
         await populateDriverData()
         }
-        tableView.dataSource = self
     }
     
     private func populateDriverData() async {
@@ -39,6 +37,8 @@ final class DriverDataViewController: UIViewController {
     private func configureUI() {
         title = "Mario Kart - Super Drivers"
         view.backgroundColor = .white
+        view.addSubview(tableView)
+        tableView.dataSource = self
         
         var constraints = [NSLayoutConstraint]()
         // Add
