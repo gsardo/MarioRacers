@@ -14,6 +14,8 @@ class DriverDataViewModel {
     func populateDriverData(url: URL) async {
         
         do {
+            // we get the data from the API then iterate through it, and each time call the initialiser of
+            // DriverViewModel to populate information on screen
             let drivers = try await Webservice().getDriverData(url: url)
             self.drivers = drivers.map(DriverViewModel.init)
         } catch {
@@ -22,6 +24,8 @@ class DriverDataViewModel {
     }
 }
 
+
+// contains data we want to display on the screen
 struct DriverViewModel {
     private let driver: Driver
     

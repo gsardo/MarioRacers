@@ -9,6 +9,8 @@ import Foundation
 
 struct Driver: Decodable {
     
+    // this is where we decode the data and properties that we want to use
+    
     let name: String
     let specialSkill: String
     let debutTour: String

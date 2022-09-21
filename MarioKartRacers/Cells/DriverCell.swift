@@ -11,20 +11,20 @@ import UIKit
 
 class DriverCell: UITableViewCell {
     
-    lazy var driverNameLabel: UILabel = {
+    private let driverNameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    lazy var specialSkillLabel: UILabel = {
+    private let specialSkillLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 11)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    lazy var debutTourLabel: UILabel = {
+    private let debutTourLabel: UILabel = {
         let label =  UILabel()
         label.font = UIFont.systemFont(ofSize: 11)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -52,21 +52,6 @@ class DriverCell: UITableViewCell {
         contentView.addSubview(driverNameLabel)
         contentView.addSubview(specialSkillLabel)
         contentView.addSubview(debutTourLabel)
-    
-        // add NSLayoutConstraints for name
-        driverNameLabel.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        driverNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
-        driverNameLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        
-        // add NSLayoutConstraints for specialSkill
-        specialSkillLabel.widthAnchor.constraint(equalTo: driverNameLabel.widthAnchor).isActive = true
-        specialSkillLabel.topAnchor.constraint(equalTo: driverNameLabel.bottomAnchor).isActive = true
-        specialSkillLabel.leadingAnchor.constraint(equalTo: driverNameLabel.leadingAnchor).isActive = true
-        
-        // add NSLayoutConstraints for debutTour
-        debutTourLabel.widthAnchor.constraint(equalTo: specialSkillLabel.widthAnchor).isActive = true
-        debutTourLabel.topAnchor.constraint(equalTo: specialSkillLabel.bottomAnchor).isActive = true
-        debutTourLabel.leadingAnchor.constraint(equalTo: specialSkillLabel.leadingAnchor).isActive = true
     }
     
 }
