@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A374B1C28CEE83200371A9C /* Mario Kart Racers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mario Kart Racers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A374B1C28CEE83200371A9C /* MarioKartRacers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MarioKartRacers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A374B1F28CEE83200371A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A374B2128CEE83200371A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A374B2828CEE83300371A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		1A374B1328CEE83200371A9C = {
 			isa = PBXGroup;
 			children = (
-				1A374B1E28CEE83200371A9C /* Mario Kart Racers */,
+				1A374B1E28CEE83200371A9C /* MarioKartRacers */,
 				1A374B1D28CEE83200371A9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		1A374B1D28CEE83200371A9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A374B1C28CEE83200371A9C /* Mario Kart Racers.app */,
+				1A374B1C28CEE83200371A9C /* MarioKartRacers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A374B1E28CEE83200371A9C /* Mario Kart Racers */ = {
+		1A374B1E28CEE83200371A9C /* MarioKartRacers */ = {
 			isa = PBXGroup;
 			children = (
 				1A374B4228CF6D0400371A9C /* Cells */,
@@ -76,7 +76,7 @@
 				1A374B2A28CEE83300371A9C /* LaunchScreen.storyboard */,
 				1A374B2D28CEE83300371A9C /* Info.plist */,
 			);
-			path = "Mario Kart Racers";
+			path = "MarioKartRacers";
 			sourceTree = "<group>";
 		};
 		1A374B3328CEE85500371A9C /* Constants */ = {
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A374B1B28CEE83200371A9C /* Mario Kart Racers */ = {
+		1A374B1B28CEE83200371A9C /* MarioKartRacers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A374B3028CEE83300371A9C /* Build configuration list for PBXNativeTarget "Mario Kart Racers" */;
+			buildConfigurationList = 1A374B3028CEE83300371A9C /* Build configuration list for PBXNativeTarget "MarioKartRacers" */;
 			buildPhases = (
 				1A374B1828CEE83200371A9C /* Sources */,
 				1A374B1928CEE83200371A9C /* Frameworks */,
@@ -142,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = "Mario Kart Racers";
-			productName = "Mario Kart Racers";
-			productReference = 1A374B1C28CEE83200371A9C /* Mario Kart Racers.app */;
+			name = "MarioKartRacers";
+			productName = "MarioKartRacers";
+			productReference = 1A374B1C28CEE83200371A9C /* MarioKartRacers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A374B1728CEE83200371A9C /* Build configuration list for PBXProject "Mario Kart Racers" */;
+			buildConfigurationList = 1A374B1728CEE83200371A9C /* Build configuration list for PBXProject "MarioKartRacers" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -175,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A374B1B28CEE83200371A9C /* Mario Kart Racers */,
+				1A374B1B28CEE83200371A9C /* MarioKartRacers */,
 			);
 		};
 /* End PBXProject section */
@@ -345,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 963V4Q7N3F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Mario Kart Racers/Info.plist";
+				INFOPLIST_FILE = MarioKartRacers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -372,7 +372,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 963V4Q7N3F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Mario Kart Racers/Info.plist";
+				INFOPLIST_FILE = MarioKartRacers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -393,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A374B1728CEE83200371A9C /* Build configuration list for PBXProject "Mario Kart Racers" */ = {
+		1A374B1728CEE83200371A9C /* Build configuration list for PBXProject "MarioKartRacers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A374B2E28CEE83300371A9C /* Debug */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A374B3028CEE83300371A9C /* Build configuration list for PBXNativeTarget "Mario Kart Racers" */ = {
+		1A374B3028CEE83300371A9C /* Build configuration list for PBXNativeTarget "MarioKartRacers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A374B3128CEE83300371A9C /* Debug */,
