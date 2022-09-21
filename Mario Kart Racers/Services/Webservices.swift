@@ -24,4 +24,28 @@ class Webservice {
         
         return try JSONDecoder().decode([Driver].self, from: data)
     }
+    
+    func getKartData(url: URL) async throws -> [Kart] {
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let httpResponse = response as? HTTPURLResponse,
+              httpResponse.statusCode == 200 else {
+                    throw FetchError.invalidServerResponse
+            }
+        
+        return try JSONDecoder().decode([Kart].self, from: data)
+    }
+    
+    func getCourseData(url: URL) async throws -> [Course] {
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let httpResponse = response as? HTTPURLResponse,
+              httpResponse.statusCode == 200 else {
+                    throw FetchError.invalidServerResponse
+            }
+        
+        return try JSONDecoder().decode([Course].self, from: data)
+    }
 }

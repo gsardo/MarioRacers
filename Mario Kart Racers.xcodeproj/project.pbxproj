@@ -17,6 +17,10 @@
 		1A374B3E28CEEA8700371A9C /* DriverDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B3D28CEEA8700371A9C /* DriverDataViewModel.swift */; };
 		1A374B4128CEEB8900371A9C /* DriverDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B4028CEEB8900371A9C /* DriverDataViewController.swift */; };
 		1A374B4428CF6D1500371A9C /* DriverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B4328CF6D1500371A9C /* DriverCell.swift */; };
+		1A54650728DAEA86007EAC41 /* Kart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54650628DAEA86007EAC41 /* Kart.swift */; };
+		1A54650B28DAEB24007EAC41 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54650A28DAEB24007EAC41 /* Course.swift */; };
+		1A54650E28DAED9B007EAC41 /* KartDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54650D28DAED9B007EAC41 /* KartDataViewModel.swift */; };
+		1A54651228DAEE77007EAC41 /* CourseDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54651128DAEE77007EAC41 /* CourseDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		1A374B3D28CEEA8700371A9C /* DriverDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDataViewModel.swift; sourceTree = "<group>"; };
 		1A374B4028CEEB8900371A9C /* DriverDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDataViewController.swift; sourceTree = "<group>"; };
 		1A374B4328CF6D1500371A9C /* DriverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverCell.swift; sourceTree = "<group>"; };
+		1A54650628DAEA86007EAC41 /* Kart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kart.swift; sourceTree = "<group>"; };
+		1A54650A28DAEB24007EAC41 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		1A54650D28DAED9B007EAC41 /* KartDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartDataViewModel.swift; sourceTree = "<group>"; };
+		1A54651128DAEE77007EAC41 /* CourseDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +72,11 @@
 		1A374B1E28CEE83200371A9C /* Mario Kart Racers */ = {
 			isa = PBXGroup;
 			children = (
-				1A374B4228CF6D0400371A9C /* Cells */,
-				1A374B3F28CEEB7400371A9C /* Controllers */,
-				1A374B3C28CEEA7600371A9C /* ViewModels */,
-				1A374B3928CEE92C00371A9C /* Models */,
+				1A54650828DAEB11007EAC41 /* Course */,
+				1A54650428DAEA6A007EAC41 /* Kart */,
+				1A54650328DAE8FF007EAC41 /* Driver */,
 				1A374B3628CEE8A200371A9C /* Services */,
-				1A374B3328CEE85500371A9C /* Constants */,
+				1A374B3328CEE85500371A9C /* Utils */,
 				1A374B1F28CEE83200371A9C /* AppDelegate.swift */,
 				1A374B2128CEE83200371A9C /* SceneDelegate.swift */,
 				1A374B2828CEE83300371A9C /* Assets.xcassets */,
@@ -79,12 +86,12 @@
 			path = "Mario Kart Racers";
 			sourceTree = "<group>";
 		};
-		1A374B3328CEE85500371A9C /* Constants */ = {
+		1A374B3328CEE85500371A9C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				1A374B3428CEE86800371A9C /* Constants.swift */,
 			);
-			path = Constants;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		1A374B3628CEE8A200371A9C /* Services */ = {
@@ -125,6 +132,67 @@
 				1A374B4328CF6D1500371A9C /* DriverCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		1A54650328DAE8FF007EAC41 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				1A374B4228CF6D0400371A9C /* Cells */,
+				1A374B3F28CEEB7400371A9C /* Controllers */,
+				1A374B3C28CEEA7600371A9C /* ViewModels */,
+				1A374B3928CEE92C00371A9C /* Models */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		1A54650428DAEA6A007EAC41 /* Kart */ = {
+			isa = PBXGroup;
+			children = (
+				1A54650C28DAED7C007EAC41 /* ViewModels */,
+				1A54650528DAEA74007EAC41 /* Models */,
+			);
+			path = Kart;
+			sourceTree = "<group>";
+		};
+		1A54650528DAEA74007EAC41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A54650628DAEA86007EAC41 /* Kart.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A54650828DAEB11007EAC41 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				1A54650F28DAEDFE007EAC41 /* ViewModels */,
+				1A54650928DAEB19007EAC41 /* Models */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		1A54650928DAEB19007EAC41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A54650A28DAEB24007EAC41 /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A54650C28DAED7C007EAC41 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A54650D28DAED9B007EAC41 /* KartDataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A54650F28DAEDFE007EAC41 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A54651128DAEE77007EAC41 /* CourseDataViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A374B3828CEE8B500371A9C /* Webservices.swift in Sources */,
+				1A54650728DAEA86007EAC41 /* Kart.swift in Sources */,
+				1A54650B28DAEB24007EAC41 /* Course.swift in Sources */,
+				1A54651228DAEE77007EAC41 /* CourseDataViewModel.swift in Sources */,
 				1A374B3E28CEEA8700371A9C /* DriverDataViewModel.swift in Sources */,
+				1A54650E28DAED9B007EAC41 /* KartDataViewModel.swift in Sources */,
 				1A374B2028CEE83200371A9C /* AppDelegate.swift in Sources */,
 				1A374B3B28CEE94800371A9C /* Driver.swift in Sources */,
 				1A374B2228CEE83200371A9C /* SceneDelegate.swift in Sources */,
