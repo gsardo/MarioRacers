@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2B608A28DD823500469759 /* KartDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B608928DD823500469759 /* KartDataViewModel.swift */; };
+		1A2B608D28DD825800469759 /* Kart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B608C28DD825800469759 /* Kart.swift */; };
+		1A2B609128DD828D00469759 /* CourseDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B609028DD828D00469759 /* CourseDataViewModel.swift */; };
+		1A2B609428DD82A300469759 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B609328DD82A300469759 /* Course.swift */; };
 		1A374B2028CEE83200371A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B1F28CEE83200371A9C /* AppDelegate.swift */; };
 		1A374B2228CEE83200371A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A374B2128CEE83200371A9C /* SceneDelegate.swift */; };
 		1A374B2928CEE83300371A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A374B2828CEE83300371A9C /* Assets.xcassets */; };
@@ -20,7 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A374B1C28CEE83200371A9C /* MarioKartRacers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MarioKartRacers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2B608928DD823500469759 /* KartDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KartDataViewModel.swift; sourceTree = "<group>"; };
+		1A2B608C28DD825800469759 /* Kart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kart.swift; sourceTree = "<group>"; };
+		1A2B609028DD828D00469759 /* CourseDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDataViewModel.swift; sourceTree = "<group>"; };
+		1A2B609328DD82A300469759 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		1A374B1C28CEE83200371A9C /* MarioKartRacers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarioKartRacers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A374B1F28CEE83200371A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A374B2128CEE83200371A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1A374B2828CEE83300371A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +53,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A2B608728DD821D00469759 /* Kart */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B608B28DD825000469759 /* Models */,
+				1A2B608828DD822500469759 /* ViewModels */,
+			);
+			path = Kart;
+			sourceTree = "<group>";
+		};
+		1A2B608828DD822500469759 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B608928DD823500469759 /* KartDataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A2B608B28DD825000469759 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B608C28DD825800469759 /* Kart.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A2B608E28DD827400469759 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B609228DD829A00469759 /* Models */,
+				1A2B608F28DD827A00469759 /* ViewModels */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		1A2B608F28DD827A00469759 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B609028DD828D00469759 /* CourseDataViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A2B609228DD829A00469759 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A2B609328DD82A300469759 /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A2B609528DD836700469759 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				1A374B4228CF6D0400371A9C /* Cells */,
+				1A374B3F28CEEB7400371A9C /* Controllers */,
+				1A374B3C28CEEA7600371A9C /* ViewModels */,
+				1A374B3928CEE92C00371A9C /* Models */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
 		1A374B1328CEE83200371A9C = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +133,9 @@
 		1A374B1E28CEE83200371A9C /* MarioKartRacers */ = {
 			isa = PBXGroup;
 			children = (
-				1A374B4228CF6D0400371A9C /* Cells */,
-				1A374B3F28CEEB7400371A9C /* Controllers */,
-				1A374B3C28CEEA7600371A9C /* ViewModels */,
-				1A374B3928CEE92C00371A9C /* Models */,
+				1A2B609528DD836700469759 /* Driver */,
+				1A2B608E28DD827400469759 /* Course */,
+				1A2B608728DD821D00469759 /* Kart */,
 				1A374B3628CEE8A200371A9C /* Services */,
 				1A374B3328CEE85500371A9C /* Constants */,
 				1A374B1F28CEE83200371A9C /* AppDelegate.swift */,
@@ -76,7 +144,7 @@
 				1A374B2A28CEE83300371A9C /* LaunchScreen.storyboard */,
 				1A374B2D28CEE83300371A9C /* Info.plist */,
 			);
-			path = "MarioKartRacers";
+			path = MarioKartRacers;
 			sourceTree = "<group>";
 		};
 		1A374B3328CEE85500371A9C /* Constants */ = {
@@ -142,8 +210,8 @@
 			);
 			dependencies = (
 			);
-			name = "MarioKartRacers";
-			productName = "MarioKartRacers";
+			name = MarioKartRacers;
+			productName = MarioKartRacers;
 			productReference = 1A374B1C28CEE83200371A9C /* MarioKartRacers.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -197,10 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2B609428DD82A300469759 /* Course.swift in Sources */,
+				1A2B608A28DD823500469759 /* KartDataViewModel.swift in Sources */,
 				1A374B3828CEE8B500371A9C /* Webservices.swift in Sources */,
 				1A374B3E28CEEA8700371A9C /* DriverDataViewModel.swift in Sources */,
 				1A374B2028CEE83200371A9C /* AppDelegate.swift in Sources */,
 				1A374B3B28CEE94800371A9C /* Driver.swift in Sources */,
+				1A2B609128DD828D00469759 /* CourseDataViewModel.swift in Sources */,
+				1A2B608D28DD825800469759 /* Kart.swift in Sources */,
 				1A374B2228CEE83200371A9C /* SceneDelegate.swift in Sources */,
 				1A374B4128CEEB8900371A9C /* DriverDataViewController.swift in Sources */,
 				1A374B3528CEE86800371A9C /* Constants.swift in Sources */,
